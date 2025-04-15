@@ -1,3 +1,4 @@
+#![allow(unused)]
 // FINAL PROJECT
 //
 // Create an image processing application.  Exactly what it does and how it does
@@ -100,7 +101,7 @@ fn blur(infile: String, outfile: String) {
     // **OPTION**
     // Parse the blur amount (an f32) from the command-line and pass it through
     // to this function, instead of hard-coding it to 2.0.
-    let img2 = img.blur(2.0);
+    let img2 = img.blur(5.0);
     // Here's how you save an image to a file.
     img2.save(outfile).expect("Failed writing OUTFILE.");
 }
